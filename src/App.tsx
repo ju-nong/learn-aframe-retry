@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Scene, Entity } from "@belivvr/aframe-react";
+import { Grass } from "@components/floor";
 
 function App() {
-    const [count, setCount] = useState(0);
-
-    return <div className="App">어서오고</div>;
+    return (
+        <Scene>
+            <Grass />
+        </Scene>
+    );
 }
 
 export default App;
