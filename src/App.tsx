@@ -9,7 +9,7 @@ function App() {
     return (
         <Scene joystick>
             <Grass />
-            {isMobileDevice && <JumpButton size="medium" theme="dark" />}
+            <JumpButton size="medium" theme="dark" />
             <Me />
         </Scene>
     );

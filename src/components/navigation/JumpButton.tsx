@@ -2,6 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
 import { lighten, darken } from "polished";
+import { isMobileDevice } from "@/utils/devices";
 
 interface StyledProps {
     colorConfig: {
@@ -13,6 +14,8 @@ interface StyledProps {
         right: number;
         bottom: number;
     };
+
+    visible: boolean;
 }
 
 const JumpButtonStyled = styled.button<StyledProps>`
@@ -32,6 +35,8 @@ const JumpButtonStyled = styled.button<StyledProps>`
 
             color: ${color};
             background-color: ${bgColor};
+
+            display: ${props.visible ? "block" : "none"};
 
             &.hover {
                 color: ${lighten(0.2, color)};
@@ -98,6 +103,7 @@ function JumpButton({ size, theme, position }: JumpButtonProps) {
         <JumpButtonStyled
             colorConfig={colorConfig[theme]}
             positionConfig={positionConfig}
+            visible={isMobileDevice}
             className={size}
             id="jump"
         >
