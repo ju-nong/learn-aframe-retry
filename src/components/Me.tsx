@@ -3,6 +3,7 @@ import { Camera } from "@belivvr/aframe-react";
 import { isMobileDevice } from "@utils/devices";
 import "@aframe/look-controls-touch-y-axios";
 import "@aframe/jump";
+import "@aframe/joystick";
 
 interface MeProps {
     speed?: number;

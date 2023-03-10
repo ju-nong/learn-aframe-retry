@@ -19,6 +19,7 @@ const JumpButtonStyled = styled.button<StyledProps>`
     position: fixed;
     z-index: 100;
     border-radius: 100%;
+    outline: unset;
     cursor: pointer;
 
     ${(props) => {

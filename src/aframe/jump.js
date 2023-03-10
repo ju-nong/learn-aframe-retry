@@ -14,7 +14,7 @@ AFRAME.registerComponent("jump", {
             document
                 .querySelector(this.data.pressToJump)
                 .addEventListener("touchstart", (event) => {
-                    event.preventDefault(); // focus 버튼에 focus없애기 위해
+                    // event.preventDefault(); // focus 버튼에 focus없애기 위해
 
                     if (this.isJump) {
                         return;
