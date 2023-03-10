@@ -10,9 +10,14 @@
     },
     "dependencies": {
         "@belivvr/aframe-react": "^0.4.2",
+        "@emotion/react": "^11.10.6",
+        "@emotion/styled": "^11.10.6",
         "nipplejs": "^0.10.1",
+        "node-sass": "^8.0.0",
+        "polished": "^4.2.2",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "sass": "^1.58.3"
     },
     "devDependencies": {
         "@types/node": "^18.15.0",
