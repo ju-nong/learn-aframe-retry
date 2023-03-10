@@ -5,12 +5,13 @@ function Grass() {
         <Entity
             geometry={{
                 primitive: "plane",
-                width: 100,
-                height: 100,
+                width: 1000,
+                height: 1000,
             }}
             material={{
-                src: "texture/grass.jpg",
-                repeat: { x: 100, y: 100 },
+                // src: "texture/grass.jpg",
+                src: "texture/grass-detail.jpg",
+                repeat: { x: 1000, y: 1000 },
             }}
             position={{
                 x: 0,
